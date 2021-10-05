@@ -13,6 +13,9 @@ class Kost(models.Model):
     title = models.CharField(max_length=200, null=True)
     caption = RichTextField(null=True)
 
+    class Meta:
+        ordering = ['-id',]
+
     def save(self, *args, **kwargs):
         super(Kost, self).save(*args, **kwargs)
         return self.id

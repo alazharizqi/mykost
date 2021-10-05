@@ -7,7 +7,7 @@ from . models import *
 # Create your views here.
 
 def kost(request):
-    kost = Kost.objects.all()
+    kost = Kost.objects.all().order_by('-id')
     context = {'kost' : kost}
     return render(request, 'kost.html', context)
 
