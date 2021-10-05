@@ -41,7 +41,9 @@ SECRET_KEY = 'django-insecure-dsl6oot7pp^(*87wv)aqw^!_6u%28g4c_q-0(rlovyyfs%dt6(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://mykost.herokuapp.com/',
+'localhost',
+'127.0.0.1']
 
 
 # Application definition
